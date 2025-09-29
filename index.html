@@ -1,38 +1,41 @@
 <!doctype html>
-<html lang="en" class="h-100">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="./styles.css" rel="stylesheet"/>
-  </head>
-  <body class="h-100">
-    <main class="h-100">
-        <div style="background-color: black;" class="text-white ">
+</head>
+<body class="container">
+    <main class="row">
+        <div style="background-color: black;" class="text-white order-sm-first col-md-2">
             <span>HEADER</span>
         </div>
-        <div style="background-color: red;" class="text-white col-sm-1 order-2">
+        <div style="background-color: red;" class="text-white order-sm-2 col-sm-2 order-md-1 col-md-10">
             <span>MENU</span>
         </div>
-        <div style="background-color: blue;" class="text-white order-1">
+        <div style="background-color: blue;" class="text-white order-sm-1 order-md-2">
             <span>HERO</span>
         </div>
-        <div style="background-color: darkblue;" class="text-white ">
-            <span>MAIN</span>
-        </div>
-        <div style="background-color: yellow;">
-            <span>BANNER</span>
-        </div>
-        <div>
-            <div style="background-color: green;">
-                <span>EXTRA</span>
+        <div class="order-sm-last col-sm-10 col-md-12 row">
+            <div style="background-color: darkblue;" class="text-white col-md-6">
+                <span>MAIN</span>
             </div>
-            <div style="background-color: lightgreen;">
-                <span>IMAGE</span>
+            <div style="background-color: yellow;" class="order-md-last">
+                <span>BANNER</span>
+            </div>
+            <div class="row col-md-3 offset-md-3">
+                <div style="background-color: green;" class="col-sm-8 col-md-12 order-md-last">
+                    <span>EXTRA</span>
+                </div>
+                <div style="background-color: lightgreen;" class="col-sm-4 col-md-12">
+                    <span>IMAGE</span>
+                </div>
             </div>
         </div>
+        
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
